@@ -13,8 +13,15 @@ while True:
 print(products) #print [['Name1', 'Price1'], ['Name2', 'Price2']]
 
 for p in products:
-	print(p)    #print['Name1', 'Price1']
+	#print(p)    #print['Name1', 'Price1']
 				#print['Name2', 'Price2']
 	#print(p[0]) #print first of name & product
 				#Only print name
 	print(p[0], 'price is: ',p[1])
+
+#'abc' + '123' = 'abc123'
+#'abc' * 3 = 'abcabcabc'
+
+with open('product.csv', 'w') as f:
+	for p in products:
+		f.write(p[0] + ',' + p[1] + '\n') #','->分隔'Divide'
