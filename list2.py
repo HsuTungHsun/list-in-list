@@ -10,4 +10,11 @@ while True:
 	#p = [name, price] #Equal to line 7 to 9 
 	#products.append(p) #Put little list into big list
 	products.append([name, price]) #Equal to line 10 to 11
-print(products)
+print(products) #print [['Name1', 'Price1'], ['Name2', 'Price2']]
+
+for p in products:
+	print(p)    #print['Name1', 'Price1']
+				#print['Name2', 'Price2']
+	#print(p[0]) #print first of name & product
+				#Only print name
+	print(p[0], 'price is: ',p[1])
